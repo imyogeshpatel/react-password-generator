@@ -9,7 +9,7 @@ const App = () => {
   const [isCharsAllowed, setIsCharsAllowed] = useState(false)
   const [password, setPassword] = useState('')
 
-  //useRef hook 
+  //useRef hook
   const passwordRef = useRef(null)
 
   const passwordGenerator = useCallback(() => {
@@ -38,9 +38,9 @@ const App = () => {
 
   return (
 
-  <div className='bg-[#283618] w-full h-screen flex justify-center items-center'>
+  <div className='bg-[url(./assets/password.jpg)] bg-cover  z-0 w-full h-screen flex justify-center items-center'>
 
-    <div className='w-full max-w-2xl min-w rounded-lg p-4 m text-[#fefae0] bg-[#212c14] text-lg '>
+    <div className='w-full max-w-2xl min-w z-1 rounded-lg p-4 m text-[#fefae0] bg-[#212c14] text-lg '>
         
           <h1 className='text-center text-2xl font-bold text-[#fefae0]'>Password Generator</h1>
 
@@ -115,7 +115,7 @@ const App = () => {
     </div>
 
   </div>
-  
+
   )
 }
 
